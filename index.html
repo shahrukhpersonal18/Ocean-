@@ -1,51 +1,81 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Ocean Store</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🌊 Ocean Store</title>
+
 <style>
 body{
 margin:0;
 font-family:Arial,sans-serif;
+background:linear-gradient(-45deg,#00b4ff,#0077ff,#00d4aa,#0044ff);
+background-size:400% 400%;
+animation:bg 10s ease infinite;
 display:flex;
 justify-content:center;
 align-items:center;
 height:100vh;
-background:linear-gradient(135deg,#00c6ff,#0072ff,#00e5a8);
-background-size:300% 300%;
-animation:bg 8s ease infinite;
 color:white;
-text-align:center;
+overflow:hidden;
 }
+
 @keyframes bg{
 0%{background-position:0% 50%;}
 50%{background-position:100% 50%;}
 100%{background-position:0% 50%;}
 }
-.box{
-background:rgba(255,255,255,0.15);
-padding:35px;
-border-radius:20px;
-backdrop-filter:blur(10px);
-box-shadow:0 0 25px rgba(0,0,0,.3);
+
+.card{
+width:90%;
+max-width:420px;
+padding:30px;
+background:rgba(255,255,255,.15);
+backdrop-filter:blur(15px);
+border-radius:25px;
+box-shadow:0 0 30px rgba(0,0,0,.4);
+text-align:center;
+animation:up 1s;
 }
+
+@keyframes up{
+from{transform:translateY(50px);opacity:0;}
+to{transform:translateY(0);opacity:1;}
+}
+
 h1{
-font-size:42px;
+font-size:40px;
 margin:0;
 }
-p{
-font-size:20px;
+
+h2{
+font-size:22px;
+margin-top:10px;
 }
+
+p{
+font-size:17px;
+line-height:1.6;
+}
+
+a{
+color:#fff;
+text-decoration:none;
+font-weight:bold;
+}
+
 button{
-padding:12px 28px;
+margin-top:20px;
+padding:12px 25px;
 border:none;
 border-radius:30px;
 font-size:18px;
-background:white;
-color:#0072ff;
 cursor:pointer;
+background:white;
+color:#0077ff;
 font-weight:bold;
 }
+
 button:hover{
 transform:scale(1.05);
 }
@@ -54,11 +84,31 @@ transform:scale(1.05);
 
 <body>
 
-<div class="box">
-<h1>🌊 Ocean Store</h1>
-<p>Something Amazing is Coming Soon!</p>
-<button>Coming Soon 🚀</button>
-</div>
+<div class="card">
 
-</body>
-</html>
+<h1>🌊 Ocean Store</h1>
+
+<h2>🚧 Website Under Construction</h2>
+
+<p>
+⚠️ Enter at your own risk.<br>
+This website contains 99% imagination and 1% working code 😂
+</p>
+
+<p>
+🚀 Big things are loading...<br>
+Please don't press random buttons...<br>
+Actually... go ahead. 😎
+</p>
+
+<p>
+📸 Instagram<br>
+<a href="https://instagram.com/o_o_butter">@o_o_butter</a>
+</p>
+
+<button onclick="alert('😂 Surprise! There is nothing here... Yet!')">
+Click Me 🚀
+</button>
+
+<p style="margin-top:20px;font-size:14px;">
+Made with ☕ + 😴 + 💻
